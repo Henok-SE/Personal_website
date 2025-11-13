@@ -1187,6 +1187,111 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Certificate Section Styling */
+.certificate-section {
+    margin: 60px 0;
+}
+
+.certificate-section h3 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.certificate-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    border: 1px solid var(--secondary);
+    overflow: hidden;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.certificate-header {
+    padding: 30px;
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    text-align: center;
+    position: relative;
+}
+
+.certificate-badge {
+    width: 60px;
+    height: 60px;
+    background: var(--light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.certificate-header h4 {
+    color: var(--light);
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.certificate-issuer {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+.certificate-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.certificate-content p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.certificate-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.certificate-date {
+    color: var(--accent);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.certificate-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.certificate-actions .btn {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive design for certificate section */
+@media (max-width: 480px) {
+    .certificate-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .certificate-actions .btn {
+        width: 200px;
+    }
+}
+
 .learning-path {
     background: var(--darker);
     padding: 40px;
