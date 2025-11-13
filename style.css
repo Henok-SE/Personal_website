@@ -507,7 +507,7 @@ nav {
     text-align: center;
     background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
 }
-
+/*
 .profile-img {
     width: 100px;
     height: 100px;
@@ -520,8 +520,22 @@ nav {
     color: var(--primary);
     font-size: 2.5rem;
     border: 3px solid var(--light);
+}*/
+/* Add this to your CSS file */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 3px solid var(--light);
 }
 
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .profile-header h3 {
     color: var(--light);
     margin-bottom: 5px;
@@ -695,9 +709,14 @@ footer {
     .nav-links li {
         margin: 15px 0;
     }
+    .hero-content{
+        padding: 90px;
+    }
     
     .hero h1 {
         font-size: 2.5rem;
+        line-height: 1.3;
+        word-wrap: break-word;
     }
     
     .hero-stats {
@@ -731,9 +750,20 @@ footer {
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        margin-bottom: 25px;
     }
-    
+    .hero-content > p:first-of-type{
+        font-size: 1.1rem;
+        color:var(--light);
+        font-weight: 500;
+    }
+    .hero-stats{
+        margin: 30px 0;
+    }
+    .container{
+        padding: 0 15px;
+    }
     .section-title h2 {
         font-size: 2rem;
     }
